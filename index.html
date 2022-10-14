@@ -1,0 +1,9 @@
+Hello from HTML!
+
+<div id="content"></div>
+
+<script>
+	fetch("/x.txt")
+		.then((r) => r.text())
+		.then((t) => (document.getElementById("content").innerText = t));
+</script>
